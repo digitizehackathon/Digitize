@@ -310,3 +310,10 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
+
+.faqshadow{
+  transition: box-shadow .3s;
+}
+.faqshadow{
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
