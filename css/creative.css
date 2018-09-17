@@ -404,4 +404,25 @@ header.masthead p {
         height: 5px;
     }
 
+.countdown {
+    color: #333;
+    text-align: center;
+}
+
+#head {
+    font-weight: normal;
+}
+
+.countlist {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.countspan {
+    display: block;
+    font-size: 4.5rem;
+}
 
