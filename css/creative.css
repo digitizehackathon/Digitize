@@ -326,7 +326,7 @@ header.masthead p {
 .title-arch {
     text-align: center;
     margin: 0px;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -334,7 +334,7 @@ header.masthead p {
 .project {
     width: 100%;
     height: 400px;
-   /* background-image: url(../img/conservation_theme.png);*/
+    /*background-image: url(../img/conservation_theme.png);*/
     background-size: cover;
     background-position: center;
     margin-bottom: 30px;
@@ -342,16 +342,16 @@ header.masthead p {
     float: left;
 }
 
-.project-2 {
-   /* background-image: url(../img/genderequality_theme.png);*/
-}
+/*.project-2 {
+    background-image: url(../img/genderequality_theme.png);
+}*/
 
 .project-3 {
-    /*background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);*/
+    /*background-image: url(../img/theme_placeholder.png);*/
 }
 
 .project-4 {
-    /*background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);*/
+    /*background-image: url(../img/theme_placeholder.png);*/
 }
 
 .project-hover {
@@ -364,7 +364,7 @@ header.masthead p {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     background-color: #88C425;
-    padding: 40% 30px !important;
+    padding: 10% 30px !important;
 }
 
     .project-hover hr {
