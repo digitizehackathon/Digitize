@@ -27,14 +27,18 @@ Shadow: #2369a8;
     <meta name="description" content="Digitize Hackathon : October 13-14">
     <meta name="keywords" content="Hackathon,Code,Coding,Programming">
     <meta name="author" content="Digitize">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <object data="carousel.js"></object>
 
-    <!--TEST-->
-   
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <!--FAVICON-->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -129,61 +133,72 @@ Shadow: #2369a8;
         </div>
     </header>
     <!--END HEADER-->
-    <!--THEMES-->
-    <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
-        <div class="col-md-12 theme-header text-center" id="themes" style="height: 155px">
-            <h1 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; color:#1e73be;font-weight:bold">Themes</h1>
-            <hr class="my-4">
+    <!--TIMER-->
+    <div class="countdown" style="border-left: 100px solid #1e73be; border-right: 100px solid #1e73be; padding: 30px;">
+        <h1 id="head">HACKING STARTS IN...</h1>
+        <ul>
+            <li class="countlist"><span class="countspan" id="days"></span>days</li>
+            <li class="countlist"><span class="countspan" id="hours"></span>Hours</li>
+            <li class="countlist"><span class="countspan" id="minutes"></span>Minutes</li>
+            <li class="countlist"><span class="countspan" id="seconds"></span>Seconds</li>
+        </ul>
+    </div>
+        <!--END TIMER-->
+        <!--THEMES-->
+        <div class="row no-gutters" style="border-top: 1px solid #f0f0f0">
+            <div class="col-md-12 theme-header text-center" id="themes" style="height: 155px">
+                <h1 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; color:#1e73be;font-weight:bold">Themes</h1>
+                <hr class="my-4">
+            </div>
+
+            <div style=" margin-bottom: 50px;">
+                <div class="title-arch"><p>Our core themes include environmental conservation, health and wellness, and social welfare each of which has its own prize category. We hope to teach students about these pressing social issues and how they can utilize technology to combat these injustices. Through educational workshops and the help of knowledgeable mentors, students are encouraged to design and create projects that target these specific areas. </p></div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 fadeInLeft" style="margin-left: 153px;">
+                    <!--THEME 1-->
+                    <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-globe" aria-hidden="true"></i></h2>
+                    <div class="project-hover">
+                        <h3>Environmental Conservation</h3>
+                        <hr />
+                        <p>In the modern world, our Earth faces worsening environmental issues. It is the job of the future generation to develop new technology to change the current destructive practices. Students have the opportunity to address and explore environmental conservation through research and formulation of relevant projects. </p>
+
+                    </div>
+                    <!--END THEME 1-->
+                </div>
+                <!--
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-2 wow animated animated3 fadeInLeft">
+                    <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-venus-mars" aria-hidden="true"></i></h2>
+                    <div class="project-hover">
+                        <h2>Gender Equality</h2>
+                        <hr />
+                        <p>Gender Inequality is prevalent in the tech industry. People of all genders especially women and other minority genders may feel out of place and inadequate in their workplaces</p>
+
+                    </div>
+                </div>-->
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-3 wow animated animated2 fadeInLeft">
+                    <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-heartbeat" aria-hidden="true"></i></h2>
+                    <div class="project-hover">
+
+                        <h3>Health and Wellness</h3>
+                        <hr />
+                        <p>
+                            While it may not be apparent in our everyday lives, many people in our society suffer from mental and physical illness. From mental health stigma to neglected physical problems, many people suffer without reaching out for help. For this category, students innovate new projects to create pathways to improve our health.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-4 wow animated fadeInLeft">
+                    <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
+                    <div class="project-hover">
+                        <h3>Social Welfare</h3>
+                        <hr />
+                        <p>Our world today is rapidly improving, but many still face injustices in their everyday lives based off of their race, economic status, gender, or sexuality. The task for this category is to tackle one of the problems these people face, be it safety, educational opportunities, job opportunities, etc. </p>
+
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
         </div>
 
-        <div style=" margin-bottom: 50px;">
-            <div class="title-arch"><p>Our core themes include environmental conservation, health and wellness, and social welfare each of which has its own prize category. We hope to teach students about these pressing social issues and how they can utilize technology to combat these injustices. Through educational workshops and the help of knowledgeable mentors, students are encouraged to design and create projects that target these specific areas. </p></div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 fadeInLeft" style="margin-left: 153px;">
-                <!--THEME 1-->
-                <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-globe" aria-hidden="true"></i></h2>
-                <div class="project-hover">
-                    <h3>Environmental Conservation</h3>
-                    <hr />
-                    <p>In the modern world, our Earth faces worsening environmental issues. It is the job of the future generation to develop new technology to change the current destructive practices. Students have the opportunity to address and explore environmental conservation through research and formulation of relevant projects. </p>
-
-                </div>
-                <!--END THEME 1-->
-            </div>
-            <!--
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-2 wow animated animated3 fadeInLeft">
-                <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-venus-mars" aria-hidden="true"></i></h2>
-                <div class="project-hover">
-                    <h2>Gender Equality</h2>
-                    <hr />
-                    <p>Gender Inequality is prevalent in the tech industry. People of all genders especially women and other minority genders may feel out of place and inadequate in their workplaces</p>
-
-                </div>
-            </div>-->
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-3 wow animated animated2 fadeInLeft">
-                <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-heartbeat" aria-hidden="true"></i></h2>
-                <div class="project-hover">
-
-                    <h3>Health and Wellness</h3>
-                    <hr />
-                    <p>
-                        While it may not be apparent in our everyday lives, many people in our society suffer from mental and physical illness. From mental health stigma to neglected physical problems, many people suffer without reaching out for help. For this category, students innovate new projects to create pathways to improve our health.
-                    </p>
-
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-4 wow animated fadeInLeft">
-                <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-handshake-o" aria-hidden="true"></i></h2>
-                <div class="project-hover">
-                    <h3>Social Welfare</h3>
-                    <hr />
-                    <p>Our world today is rapidly improving, but many still face injustices in their everyday lives based off of their race, economic status, gender, or sexuality. The task for this category is to tackle one of the problems these people face, be it safety, educational opportunities, job opportunities, etc. </p>
-
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        </div>
-       
         <!--END THEMES-->
         <!--ABOUT SECTION-->
         <section class="bg-primary" id="about">
@@ -412,794 +427,794 @@ Shadow: #2369a8;
 
 
 
-    <!--END SCHEDULE SECTION-->
-    <!--EVENT SECTION-->
-    <!--<section class="p-0" id="pictures">-->
-    <!--<div class="container">-->
-    <!--IMAGE SLIDESHOW-->
-    <!--
-    <h2 class="section-heading text-center" style="padding-top:0px">Pictures</h2>
-    <hr class="my-4" />
-    -->
-    <!--SLIDESHOW STYLING-->
-    <style>
-
-        * {
-            box-sizing: border-box
-        }
-
-        body {
-            font-family: Verdana, sans-serif;
-            margin: 0
-        }
-
-        .mySlides {
-            display: none;
-        }
-
-        img {
-            vertical-align: middle;
-        }
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 600px;
-            position: relative;
-            margin: auto;
-        }
-
-        /* Next & previous buttons */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-            /* On hover, add a black background color with a little bit see-through */
-            .prev:hover, .next:hover {
-                background-color: rgba(0,0,0,0.8);
-            }
-
-        /* Caption text */
-        .text {
-            color: #f2f2f2;
-            font-size: 15px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-            .active, .dot:hover {
-                background-color: #717171;
-            }
-
-        /* Fading animation */
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade {
-            from {
-                opacity: .4
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-            .prev, .next, .text {
-                font-size: 11px
-            }
-        }
-    </style>
-    <!--END SLIDESHOW STYLING-->
-    <!--SLIDESHOW HTML-->
-    <!-- commenting out the slideshow because it looks awkward right now
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <div class="numbertext">1 / 2</div>
-            <img src="img/team/Group.JPG" style="width:100%">
-
-        </div>
-        <div class="mySlides">
-            <div class="numbertext">2 / 2</div>
-            <img src="img/team/Group2.JPG" style="width:100%">
-
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-
-    </div>
-    </div>
-    ending the slide show-->
-    <!--END SLIDESHOW HTML-->
-    <!--SLIDESHOW SCRIPT-->
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <!--END SLIDESHOW SCRIPT-->
-    <!--END SLIDESHOW-->
-    </section>
-
-    <section class="bg-primary container-fluid text-center" id="event">
-        <!--EVENTS AND WORKSHOPS-->
-        <div class="row">
-            <!-- SLIDER STYLING AND JS-->
-            <script src="js/jssor.slider-27.2.0.min.js" type="text/javascript"></script>
-            <script type="text/javascript">
-                jssor_1_slider_init = function () {
-
-                    var jssor_1_options = {
-                        $AutoPlay: 1,
-                        $DragOrientation: 2,
-                        $PlayOrientation: 2,
-                        $BulletNavigatorOptions: {
-                            $Class: $JssorBulletNavigator$,
-                            $Orientation: 2
-                        }
-                    };
-
-                    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-                    /*#region responsive code begin*/
-
-                    var MAX_WIDTH = 300;
-
-                    function ScaleSlider() {
-                        var containerElement = jssor_1_slider.$Elmt.parentNode;
-                        var containerWidth = containerElement.clientWidth;
-
-                        if (containerWidth) {
-
-                            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                            jssor_1_slider.$ScaleWidth(expectedWidth);
-                        }
-                        else {
-                            window.setTimeout(ScaleSlider, 30);
-                        }
-                    }
-
-                    ScaleSlider();
-
-                    $Jssor$.$AddEvent(window, "load", ScaleSlider);
-                    $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-                    $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-                    /*#endregion responsive code end*/
-                };
-            </script>
-            <style>
-
-                /*jssor slider loading skin spin css*/
-                .jssorl-009-spin img {
-                    animation-name: jssorl-009-spin;
-                    animation-duration: 1.6s;
-                    animation-iteration-count: infinite;
-                    animation-timing-function: linear;
-                }
-
-                @keyframes jssorl-009-spin {
-                    from {
-                        transform: rotate(0deg);
-                    }
-
-                    to {
-                        transform: rotate(360deg);
-                    }
-                }
-
-                /*jssor slider bullet skin 031 css*/
-                .jssorb031 {
-                    position: absolute;
-                }
-
-                    .jssorb031 .i {
-                        position: absolute;
-                        cursor: pointer;
-                    }
-
-                        .jssorb031 .i .b {
-                            fill: #000;
-                            fill-opacity: 0.5;
-                            stroke: #fff;
-                            stroke-width: 1200;
-                            stroke-miterlimit: 10;
-                            stroke-opacity: 0.3;
-                        }
-
-                        .jssorb031 .i:hover .b {
-                            fill: #fff;
-                            fill-opacity: .7;
-                            stroke: #000;
-                            stroke-opacity: .5;
-                        }
-
-                    .jssorb031 .iav .b {
-                        fill: #fff;
-                        stroke: #000;
-                        fill-opacity: 1;
-                    }
-
-                    .jssorb031 .i.idn {
-                        opacity: .3;
-                    }
-            </style>
-            <!--END SLIDER STYLING AND JS-->
-
-            <br>
-
-            <!--MENTORS-->
-            <div class="col-md-6">
-                <h3 class="section-heading text-white">Speakers and Presenters</h3>
-                <hr class="light my-4">
-                <br />
-                <!--MENTOR SLIDER-->
-                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:180px;height:180px;overflow:hidden;visibility:hidden; border-width: 3px; border: double; border-color: #150578; border-radius: 15%">
-                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:180px;height:180px;overflow:hidden;">                        
-                        <!--FIRST DUDE-->
-                        <div data-p="170" style="background-color:white;border-width: 2px; border-color:#150578">
-                            <img src="img/people/elizabethdouglas.jpg" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
-                            <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578; "> <b>Elizabeth Douglas</b></p>
-                            <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;"> CEO of WikiHow </p>
-                        </div>
-                        <!--END FIRST DUDE-->
-                        <div data-p="170" style="background-color:white; ">
-                            <img src="img/people/tamibhaumik.png" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
-                            <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578;"> <b>Tami Bhaumik</b> </p>
-                            <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;"> VP of Marketing at Roblox </p>
-                        </div>
-                        <div data-p="170" style="background-color:white; ">
-                            <img src="img/imageplaceholder.png" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
-                            <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578;"> <b>Mentor</b> </p>
-                            <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;">  </p>
-                        </div>
-                        <div data-p="170" style="background-color:white; ">
-                            <img src="img/imageplaceholder.png" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
-                            <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578;"> <b>Mentor</b> </p>
-                            <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;">  </p>
-                        </div>
-
-                    </div>
-                    <!-- Bullet Navigator
-                    <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="2" data-scale="0.5" data-scale-right="0.75">
-                        <div data-u="prototype" class="i" style="width:12px;height:12px;">
-                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                            </svg>
-                        </div>
-                    </div>-->
-                </div>
-                <script type="text/javascript">jssor_1_slider_init();</script>
-                <!-- END MENTOR SLIDER-->
-            </div>
-            <!--END MENTORS-->
-            <!--WORKSHOPS-->
-            <div class="col-md-6">
-                <h3 class="section-heading text-white">Workshops</h3>
-                <hr class="light my-4">
-                <br />
-                <ul class="list-group list-group-flush" style="background-color: #1e73be; ">
-                    <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #1 : HTML/CSS Web Development</p></li>
-                    <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #2 : Video Game Design</p></li>
-                    <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #3 : iOS App Development</p></li>
-                    <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #4 : Cyber Security</p></li>
-                    <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #5 : Presentation Skills</p></li>
-                </ul>
-            </div>
-            <!--END WORKSHOPS-->
-    </section>
-    <!--END EVENTS AND WORKSHOPS-->
-    </section>
-    <!--END EVENT SECTION-->
-    <!--TEAM SECTION-->
-    <!--TEAM PROFILES-->
-    <section id="team">
-        <div class="container">
-            <h2 class="section-heading text-center">Our Team</h2>
-            <hr my-4 />
-
-            <!--GOT RID OF TEAM BIO-->
-            <!--<p class="text-center">We are a group of eleven students from Aragon High School who are aspiring to inspire other high school students to get more involved in tech. In our computer science class, we noticed that there was not a lot of diversity in gender and race, which was a sudden eye opener for us. This translates to the tech world as well, many companies in our very own Silicon Valley do not have much gender or racial diversity, but are working to change that. As future innovators, we too want to help diversify the tech industry for the future. Our experience motivated us to join together and provide a way for those who want to code, no matter their gender, race, age, or skill level. </p>-->
-            <div class="row">
-                <div class="col-md-10 col-lg-12">
-                    <div class="col-lg-12">
-                        <div class="row pt-md">
-                            <!--
-                                Everyone's picture dimensions: H=830px W=725px
-                                Miranda's picture dimensions: H=2355px W=2687px
-                                -->
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div>
-                                    <img src="">
-                                </div>
-                            </div>
-
-                            <!--FIRST PROFILE: for editing, then change the rest-->
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Anna (1).jpeg" class="img-thumbnail">
-                                    <ul class="text-center">                      
-                                        <a href="https://www.linkedin.com/in/annazhang2002/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="https://www.facebook.com/profile.php?id=100011715346775" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Anna Zhang</h1>
-                                <h2>Lead Organizer</h2>
-                                <p></p>
-                            </div>
-                            <!--END FIRST PROFILE-->
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Miranda.jpeg" width="2000" class="img-thumbnail">
-                                    <ul class="text-center">
-                                        <a href="https://www.linkedin.com/in/mirandachai/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="https://www.facebook.com/mirandachai36" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Miranda Chai</h1>
-                                <h2>Lead Organizer</h2>
-                                <p></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div>
-                                    <img src="">
-                                </div>
-                            </div>
-
-                            <!-- NEW ROW-->
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Sheryl.jpeg" class="img-thumbnail">
-                                    <ul class="text-center">
-                                        <a href="https://www.linkedin.com/in/sheryl-m-a56301138/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="https://www.facebook.com/profile.php?id=100009820326737" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Sheryl Muttath</h1>
-                                <h2>Sponsorship Director</h2>
-                                <p></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Mikayla.JPG" class="img-thumbnail">
-                                    <ul class="text-center">
-                                  
-                                        <a href="#" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="https://www.facebook.com/mikayla.kaliski" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Mikayla Kaliski</h1>
-                                <h2>Outreach Director</h2>
-                                <p></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Lilian.jpeg" class="img-thumbnail">
-                                    <ul class="text-center">
-                                        
-                                        <a href="https://www.linkedin.com/in/lilian-shen/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="https://www.facebook.com/lilian.shen.54" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Lilian Shen</h1>
-                                <h2>Operations Co-Lead</h2>
-                                <p></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Maia.jpeg" class="img-thumbnail">
-                                    <ul class="text-center">
-                                        
-                                        <a href="https://www.linkedin.com/in/maia-bhaumik-09838915b/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="https://www.facebook.com/profile.php?id=1000063843760" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Maia Bhaumik</h1>
-                                <h2>Operations Co-Lead</h2>
-                                <p></p>
-                            </div>
-
-                            <!-- NEW ROW-->
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile" style="margin-left: 152px;">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Elyssa.jpeg" class="img-thumbnail">
-                                    <ul class="text-center">
-                                        <a href="#" target="_blank"><li><i class="fa fa-google"></i></li></a>
-                                        <a href="#" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="#" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Elyssa Samayoa</h1>
-                                <h2>Operations Team</h2>
-                                <p></p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Connie.jpeg" class="img-thumbnail">
-                                   <!-- <ul class="text-center">
-                                        <a href="" target="_blank"><li><i class="fa fa-google"></i></li></a>
-                                        <a href="" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                        <a href="" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>-->
-                                </div>
-                                <h1>Connie Liu</h1>
-                                <h2>Designer</h2>
-                                <p></p>
-                            </div>
-                            <!--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Zoya.jpeg" class="img-thumbnail">
-                                     <ul class="text-center">
-                                            <a href="" target="_blank"><li><i class="fa fa-google"></i></li></a>
-                                            <a href="" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
-                                            <a href="" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                        </ul>
-                                </div>
-                                <h1>Zoya Low</h1>
-                                <h2>Operations Team</h2>
-                                <p></p>
-                            </div>-->
-                            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
-                                <div class="img-box">
-                                    <img src="img/team/headshots/Jane.jpeg" class="img-thumbnail">
-                                    <ul class="text-center">
-                                        
-                                        <a href="https://www.facebook.com/profile.php?id=100002901167866" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
-                                    </ul>
-                                </div>
-                                <h1>Jane Lee</h1>
-                                <h2>Sponsorship Team</h2>
-                                <p></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--TEAM PROFILE STYLING-->
-    <style>
-
-        @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-
-        body {
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        .team {
-            padding: 75px 0;
-        }
-
-        h6.description {
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: #999;
-            border-bottom: 1px solid rgba(0, 0, 0,0.1);
-            padding-bottom: 5px;
-        }
-
-        .profile {
-            margin-top: 25px;
-            text-align: center;
-            border-radius: 100%;
-        }
-
-            .profile h1 {
-                font-weight: normal;
-                font-size: 20px;
-                margin: 10px 0 0 0;
-            }
-
-            .profile h2 {
-                font-size: 14px;
-                font-weight: lighter;
-                margin-top: 5px;
-            }
-
-            .profile .img-box {
-                opacity: 1;
-                display: block;
-                position: relative;
-            }
-
-                .profile .img-box:after {
-                    content: "";
-                    opacity: 0;
-                    background-color: rgba(0, 0, 0, 0.75);
-                    position: absolute;
-                    right: 0;
-                    left: 0;
-                    top: 0;
-                    bottom: 0;
-                }
-
-        .img-box ul {
-            position: absolute;
-            z-index: 2;
-            bottom: 50px;
-            text-align: center;
-            width: 100%;
-            padding-left: 0px;
-            height: 0px;
-            margin: 0px;
-            opacity: 0;
-            border-radius: 50%;
-        }
-
-            .profile .img-box:after, .img-box ul, .img-box ul li {
-                -webkit-transition: all 0.5s ease-in-out 0s;
-                -moz-transition: all 0.5s ease-in-out 0s;
-                transition: all 0.5s ease-in-out 0s;
-            }
-
-                .img-box ul i {
-                    font-size: 20px;
-                    letter-spacing: 10px;
-                }
-
-                .img-box ul li {
-                    width: 30px;
-                    height: 30px;
-                    text-align: center;
-                    border: 1px solid #88C425;
-                    margin: 2px;
-                    padding: 5px;
-                    display: inline-block;
-                }
-
-        .img-box a {
-            color: #fff;
-        }
-
-        .img-box:hover:after {
-            opacity: 1;
-        }
-
-        .img-box:hover ul {
-            opacity: 1;
-        }
-
-        .img-box ul a {
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            -moz-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-        }
-
-        .img-box a:hover li {
-            border-color: #fff;
-            color: #88C425;
-        }
-
-        a {
-            color: #88C425;
-        }
-
-            a:hover {
-                text-decoration: none;
-                color: #519548;
-            }
-
-        i.red {
-            color: #BC0213;
-            .img-thumbnail
-
-        {
-            display: block;
-            margin: 0 auto;
-            height: auto;
-            width: 150%;
-            margin: 0 0 0 -20%;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            border-radius: 50%;
-        }
-        }
-    </style>
-    <!--END TEAM PROFILE STYLING-->
-    <!--END TEAM PROFILES-->
-    <!--SPONSORS SECION-->
-    <section class="bg-primary" id="sponsors">
-        <!--SPONSORS-->
-        <div class="container text-center">
-            <!--add digitize sponsors-->
-            <h2 class="section-heading text-white">Digitize sponsors</h2>
-            <hr class="light my-4" />
-            <a class="btn offset" style="margin-bottom: 20px; padding 10px; color: white;;" target="_blank" href="img/sponsorship_prospectus.pdf">Check out our Sponsorship Prospectus</a>
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="https://amazon.com/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/amazon.png" id="icon" />
-                    </a>
-
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://www.hackplus.io/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/hackplus.png" id="icon" />
-                    </a>
-
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://www.roblox.com/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/roblox.png" id="icon" />
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="https://balsamiq.com/" target="_blank">
-                        <img style="width:70%;border-radius:40px;clip: rect(1px,100px,99px,0px);" src="img/sponsor/balsamiq.png" id="icon" />
-                    </a>
-
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://www.talkingrain.com/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/talkingrain.png" id="icon" />
-                    </a>
-
-                </div>
-                <div class="col-sm-4">
-                    <a href=" http://bit.ly/DigitizeChallenge" target="_blank">
-                        <img style="width:70%" src="img/sponsor/challengerocket.png" id="icon" />
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="https://get.tech/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/dottech.png" id="icon" />
-                    </a>
-                </div>
-                <!--END FIRST ICON-->
-                <div class="col-sm-4">
-                    <a href="https://aopsacademy.org/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/aops.png" id="icon" />
-                    </a>
-
-                </div>
-                <div class="col-sm-4">
-                    <a href="http://the3doodler.com/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/3doodler.jpg" id="icon" />
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="row">
-                <div class="col-sm-4">
-                    <a href="https://www.jetbrains.com/" target="_blank">
-                        <img style="width:70%" src="img/sponsor/jetbrains.png" id="icon" />
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="https://quizlet.com" target="_blank">
-                        <img style="width:70%" src="img/sponsor/quizlet.png" id="icon" />
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="" target="_blank">
-                        <img style="width:70%" src="" id="icon" />
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
+        <!--END SCHEDULE SECTION-->
+        <!--EVENT SECTION-->
+        <!--<section class="p-0" id="pictures">-->
+        <!--<div class="container">-->
+        <!--IMAGE SLIDESHOW-->
+        <!--
+        <h2 class="section-heading text-center" style="padding-top:0px">Pictures</h2>
+        <hr class="my-4" />
+        -->
+        <!--SLIDESHOW STYLING-->
         <style>
 
-            #icon {
+            * {
+                box-sizing: border-box
+            }
+
+            body {
+                font-family: Verdana, sans-serif;
+                margin: 0
+            }
+
+            .mySlides {
+                display: none;
+            }
+
+            img {
+                vertical-align: middle;
+            }
+
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 600px;
                 position: relative;
+                margin: auto;
+            }
+
+            /* Next & previous buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
                 top: 50%;
-                -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-                border-radius: 10px;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+            }
+
+            /* Position the "next button" to the right */
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+                /* On hover, add a black background color with a little bit see-through */
+                .prev:hover, .next:hover {
+                    background-color: rgba(0,0,0,0.8);
+                }
+
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            /* The dots/bullets/indicators */
+            .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+
+                .active, .dot:hover {
+                    background-color: #717171;
+                }
+
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+
+                to {
+                    opacity: 1
+                }
+            }
+
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .prev, .next, .text {
+                    font-size: 11px
+                }
             }
         </style>
+        <!--END SLIDESHOW STYLING-->
+        <!--SLIDESHOW HTML-->
+        <!-- commenting out the slideshow because it looks awkward right now
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <img src="img/team/Group.JPG" style="width:100%">
 
-        <!--END SPONSORS-->
-    </section>
-    <!--END SPONSORS SECTION-->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                <img src="img/team/Group2.JPG" style="width:100%">
+
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+
+        </div>
+        </div>
+        ending the slide show-->
+        <!--END SLIDESHOW HTML-->
+        <!--SLIDESHOW SCRIPT-->
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <!--END SLIDESHOW SCRIPT-->
+        <!--END SLIDESHOW-->
+        </section>
+
+        <section class="bg-primary container-fluid text-center" id="event">
+            <!--EVENTS AND WORKSHOPS-->
+            <div class="row">
+                <!-- SLIDER STYLING AND JS-->
+                <script src="js/jssor.slider-27.2.0.min.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                    jssor_1_slider_init = function () {
+
+                        var jssor_1_options = {
+                            $AutoPlay: 1,
+                            $DragOrientation: 2,
+                            $PlayOrientation: 2,
+                            $BulletNavigatorOptions: {
+                                $Class: $JssorBulletNavigator$,
+                                $Orientation: 2
+                            }
+                        };
+
+                        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                        /*#region responsive code begin*/
+
+                        var MAX_WIDTH = 300;
+
+                        function ScaleSlider() {
+                            var containerElement = jssor_1_slider.$Elmt.parentNode;
+                            var containerWidth = containerElement.clientWidth;
+
+                            if (containerWidth) {
+
+                                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                                jssor_1_slider.$ScaleWidth(expectedWidth);
+                            }
+                            else {
+                                window.setTimeout(ScaleSlider, 30);
+                            }
+                        }
+
+                        ScaleSlider();
+
+                        $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                        /*#endregion responsive code end*/
+                    };
+                </script>
+                <style>
+
+                    /*jssor slider loading skin spin css*/
+                    .jssorl-009-spin img {
+                        animation-name: jssorl-009-spin;
+                        animation-duration: 1.6s;
+                        animation-iteration-count: infinite;
+                        animation-timing-function: linear;
+                    }
+
+                    @keyframes jssorl-009-spin {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    /*jssor slider bullet skin 031 css*/
+                    .jssorb031 {
+                        position: absolute;
+                    }
+
+                        .jssorb031 .i {
+                            position: absolute;
+                            cursor: pointer;
+                        }
+
+                            .jssorb031 .i .b {
+                                fill: #000;
+                                fill-opacity: 0.5;
+                                stroke: #fff;
+                                stroke-width: 1200;
+                                stroke-miterlimit: 10;
+                                stroke-opacity: 0.3;
+                            }
+
+                            .jssorb031 .i:hover .b {
+                                fill: #fff;
+                                fill-opacity: .7;
+                                stroke: #000;
+                                stroke-opacity: .5;
+                            }
+
+                        .jssorb031 .iav .b {
+                            fill: #fff;
+                            stroke: #000;
+                            fill-opacity: 1;
+                        }
+
+                        .jssorb031 .i.idn {
+                            opacity: .3;
+                        }
+                </style>
+                <!--END SLIDER STYLING AND JS-->
+
+                <br>
+
+                <!--MENTORS-->
+                <div class="col-md-6">
+                    <h3 class="section-heading text-white">Speakers and Presenters</h3>
+                    <hr class="light my-4">
+                    <br />
+                    <!--MENTOR SLIDER-->
+                    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:180px;height:180px;overflow:hidden;visibility:hidden; border-width: 3px; border: double; border-color: #150578; border-radius: 15%">
+                        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:180px;height:180px;overflow:hidden;">
+                            <!--FIRST DUDE-->
+                            <div data-p="170" style="background-color:white;border-width: 2px; border-color:#150578">
+                                <img src="img/people/elizabethdouglas.jpg" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
+                                <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578; "> <b>Elizabeth Douglas</b></p>
+                                <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;"> CEO of WikiHow </p>
+                            </div>
+                            <!--END FIRST DUDE-->
+                            <div data-p="170" style="background-color:white; ">
+                                <img src="img/people/tamibhaumik.png" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
+                                <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578;"> <b>Tami Bhaumik</b> </p>
+                                <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;"> VP of Marketing at Roblox </p>
+                            </div>
+                            <div data-p="170" style="background-color:white; ">
+                                <img src="img/imageplaceholder.png" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
+                                <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578;"> <b>Mentor</b> </p>
+                                <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;">  </p>
+                            </div>
+                            <div data-p="170" style="background-color:white; ">
+                                <img src="img/imageplaceholder.png" style="width:100px; height: 100px; border: double; border-color:#88C425; border-width: 2px;" class="rounded-circle" />
+                                <p class=" font-weight-light display-5" style=" text-decoration:underline overline;color:#150578;"> <b>Mentor</b> </p>
+                                <p style="padding: 2px; margin: 2px; background-color: white; color:#150578;font-weight: light; font-size: 10px; text-transform: none;">  </p>
+                            </div>
+
+                        </div>
+                        <!-- Bullet Navigator
+                        <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="2" data-scale="0.5" data-scale-right="0.75">
+                            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                                </svg>
+                            </div>
+                        </div>-->
+                    </div>
+                    <script type="text/javascript">jssor_1_slider_init();</script>
+                    <!-- END MENTOR SLIDER-->
+                </div>
+                <!--END MENTORS-->
+                <!--WORKSHOPS-->
+                <div class="col-md-6">
+                    <h3 class="section-heading text-white">Workshops</h3>
+                    <hr class="light my-4">
+                    <br />
+                    <ul class="list-group list-group-flush" style="background-color: #1e73be; ">
+                        <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #1 : HTML/CSS Web Development</p></li>
+                        <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #2 : Video Game Design</p></li>
+                        <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #3 : iOS App Development</p></li>
+                        <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #4 : Cyber Security</p></li>
+                        <li style="background-color: #1e73be; color:#fff;font-size:20px;" class="list-group-item"><p class="font-weight-light display-5">Workshop #5 : Presentation Skills</p></li>
+                    </ul>
+                </div>
+                <!--END WORKSHOPS-->
+        </section>
+        <!--END EVENTS AND WORKSHOPS-->
+        </section>
+        <!--END EVENT SECTION-->
+        <!--TEAM SECTION-->
+        <!--TEAM PROFILES-->
+        <section id="team">
+            <div class="container">
+                <h2 class="section-heading text-center">Our Team</h2>
+                <hr my-4 />
+
+                <!--GOT RID OF TEAM BIO-->
+                <!--<p class="text-center">We are a group of eleven students from Aragon High School who are aspiring to inspire other high school students to get more involved in tech. In our computer science class, we noticed that there was not a lot of diversity in gender and race, which was a sudden eye opener for us. This translates to the tech world as well, many companies in our very own Silicon Valley do not have much gender or racial diversity, but are working to change that. As future innovators, we too want to help diversify the tech industry for the future. Our experience motivated us to join together and provide a way for those who want to code, no matter their gender, race, age, or skill level. </p>-->
+                <div class="row">
+                    <div class="col-md-10 col-lg-12">
+                        <div class="col-lg-12">
+                            <div class="row pt-md">
+                                <!--
+                                    Everyone's picture dimensions: H=830px W=725px
+                                    Miranda's picture dimensions: H=2355px W=2687px
+                                    -->
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div>
+                                        <img src="">
+                                    </div>
+                                </div>
+
+                                <!--FIRST PROFILE: for editing, then change the rest-->
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Anna (1).jpeg" class="img-thumbnail">
+                                        <ul class="text-center">
+                                            <a href="https://www.linkedin.com/in/annazhang2002/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="https://www.facebook.com/profile.php?id=100011715346775" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Anna Zhang</h1>
+                                    <h2>Lead Organizer</h2>
+                                    <p></p>
+                                </div>
+                                <!--END FIRST PROFILE-->
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Miranda.jpeg" width="2000" class="img-thumbnail">
+                                        <ul class="text-center">
+                                            <a href="https://www.linkedin.com/in/mirandachai/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="https://www.facebook.com/mirandachai36" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Miranda Chai</h1>
+                                    <h2>Lead Organizer</h2>
+                                    <p></p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div>
+                                        <img src="">
+                                    </div>
+                                </div>
+
+                                <!-- NEW ROW-->
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Sheryl.jpeg" class="img-thumbnail">
+                                        <ul class="text-center">
+                                            <a href="https://www.linkedin.com/in/sheryl-m-a56301138/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="https://www.facebook.com/profile.php?id=100009820326737" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Sheryl Muttath</h1>
+                                    <h2>Sponsorship Director</h2>
+                                    <p></p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Mikayla.JPG" class="img-thumbnail">
+                                        <ul class="text-center">
+
+                                            <a href="#" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="https://www.facebook.com/mikayla.kaliski" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Mikayla Kaliski</h1>
+                                    <h2>Outreach Director</h2>
+                                    <p></p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Lilian.jpeg" class="img-thumbnail">
+                                        <ul class="text-center">
+
+                                            <a href="https://www.linkedin.com/in/lilian-shen/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="https://www.facebook.com/lilian.shen.54" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Lilian Shen</h1>
+                                    <h2>Operations Co-Lead</h2>
+                                    <p></p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Maia.jpeg" class="img-thumbnail">
+                                        <ul class="text-center">
+
+                                            <a href="https://www.linkedin.com/in/maia-bhaumik-09838915b/" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="https://www.facebook.com/profile.php?id=1000063843760" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Maia Bhaumik</h1>
+                                    <h2>Operations Co-Lead</h2>
+                                    <p></p>
+                                </div>
+
+                                <!-- NEW ROW-->
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile" style="margin-left: 152px;">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Elyssa.jpeg" class="img-thumbnail">
+                                        <ul class="text-center">
+                                            <a href="#" target="_blank"><li><i class="fa fa-google"></i></li></a>
+                                            <a href="#" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                            <a href="#" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Elyssa Samayoa</h1>
+                                    <h2>Operations Team</h2>
+                                    <p></p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Connie.jpeg" class="img-thumbnail">
+                                        <!-- <ul class="text-center">
+                                             <a href="" target="_blank"><li><i class="fa fa-google"></i></li></a>
+                                             <a href="" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                             <a href="" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                         </ul>-->
+                                    </div>
+                                    <h1>Connie Liu</h1>
+                                    <h2>Designer</h2>
+                                    <p></p>
+                                </div>
+                                <!--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Zoya.jpeg" class="img-thumbnail">
+                                         <ul class="text-center">
+                                                <a href="" target="_blank"><li><i class="fa fa-google"></i></li></a>
+                                                <a href="" target="_blank"><li><i class="fa fa-linkedin"></i></li></a>
+                                                <a href="" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                            </ul>
+                                    </div>
+                                    <h1>Zoya Low</h1>
+                                    <h2>Operations Team</h2>
+                                    <p></p>
+                                </div>-->
+                                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                                    <div class="img-box">
+                                        <img src="img/team/headshots/Jane.jpeg" class="img-thumbnail">
+                                        <ul class="text-center">
+
+                                            <a href="https://www.facebook.com/profile.php?id=100002901167866" target="_blank"><li><i class="fa fa-facebook"></i></li></a>
+                                        </ul>
+                                    </div>
+                                    <h1>Jane Lee</h1>
+                                    <h2>Sponsorship Team</h2>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--TEAM PROFILE STYLING-->
+        <style>
+
+            @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+
+            body {
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            .team {
+                padding: 75px 0;
+            }
+
+            h6.description {
+                font-weight: bold;
+                letter-spacing: 2px;
+                color: #999;
+                border-bottom: 1px solid rgba(0, 0, 0,0.1);
+                padding-bottom: 5px;
+            }
+
+            .profile {
+                margin-top: 25px;
+                text-align: center;
+                border-radius: 100%;
+            }
+
+                .profile h1 {
+                    font-weight: normal;
+                    font-size: 20px;
+                    margin: 10px 0 0 0;
+                }
+
+                .profile h2 {
+                    font-size: 14px;
+                    font-weight: lighter;
+                    margin-top: 5px;
+                }
+
+                .profile .img-box {
+                    opacity: 1;
+                    display: block;
+                    position: relative;
+                }
+
+                    .profile .img-box:after {
+                        content: "";
+                        opacity: 0;
+                        background-color: rgba(0, 0, 0, 0.75);
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                    }
+
+            .img-box ul {
+                position: absolute;
+                z-index: 2;
+                bottom: 50px;
+                text-align: center;
+                width: 100%;
+                padding-left: 0px;
+                height: 0px;
+                margin: 0px;
+                opacity: 0;
+                border-radius: 50%;
+            }
+
+                .profile .img-box:after, .img-box ul, .img-box ul li {
+                    -webkit-transition: all 0.5s ease-in-out 0s;
+                    -moz-transition: all 0.5s ease-in-out 0s;
+                    transition: all 0.5s ease-in-out 0s;
+                }
+
+                    .img-box ul i {
+                        font-size: 20px;
+                        letter-spacing: 10px;
+                    }
+
+                    .img-box ul li {
+                        width: 30px;
+                        height: 30px;
+                        text-align: center;
+                        border: 1px solid #88C425;
+                        margin: 2px;
+                        padding: 5px;
+                        display: inline-block;
+                    }
+
+            .img-box a {
+                color: #fff;
+            }
+
+            .img-box:hover:after {
+                opacity: 1;
+            }
+
+            .img-box:hover ul {
+                opacity: 1;
+            }
+
+            .img-box ul a {
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                -moz-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+            }
+
+            .img-box a:hover li {
+                border-color: #fff;
+                color: #88C425;
+            }
+
+            a {
+                color: #88C425;
+            }
+
+                a:hover {
+                    text-decoration: none;
+                    color: #519548;
+                }
+
+            i.red {
+                color: #BC0213;
+                .img-thumbnail
+
+            {
+                display: block;
+                margin: 0 auto;
+                height: auto;
+                width: 150%;
+                margin: 0 0 0 -20%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border-radius: 50%;
+            }
+            }
+        </style>
+        <!--END TEAM PROFILE STYLING-->
+        <!--END TEAM PROFILES-->
+        <!--SPONSORS SECION-->
+        <section class="bg-primary" id="sponsors">
+            <!--SPONSORS-->
+            <div class="container text-center">
+                <!--add digitize sponsors-->
+                <h2 class="section-heading text-white">Digitize sponsors</h2>
+                <hr class="light my-4" />
+                <a class="btn offset" style="margin-bottom: 20px; padding 10px; color: white;;" target="_blank" href="img/sponsorship_prospectus.pdf">Check out our Sponsorship Prospectus</a>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://amazon.com/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/amazon.png" id="icon" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.hackplus.io/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/hackplus.png" id="icon" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.roblox.com/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/roblox.png" id="icon" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://balsamiq.com/" target="_blank">
+                            <img style="width:70%;border-radius:40px;clip: rect(1px,100px,99px,0px);" src="img/sponsor/balsamiq.png" id="icon" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://www.talkingrain.com/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/talkingrain.png" id="icon" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <a href=" http://bit.ly/DigitizeChallenge" target="_blank">
+                            <img style="width:70%" src="img/sponsor/challengerocket.png" id="icon" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://get.tech/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/dottech.png" id="icon" />
+                        </a>
+                    </div>
+                    <!--END FIRST ICON-->
+                    <div class="col-sm-4">
+                        <a href="https://aopsacademy.org/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/aops.png" id="icon" />
+                        </a>
+
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="http://the3doodler.com/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/3doodler.jpg" id="icon" />
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="https://www.jetbrains.com/" target="_blank">
+                            <img style="width:70%" src="img/sponsor/jetbrains.png" id="icon" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="https://quizlet.com" target="_blank">
+                            <img style="width:70%" src="img/sponsor/quizlet.png" id="icon" />
+                        </a>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="" target="_blank">
+                            <img style="width:70%" src="" id="icon" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <style>
+
+                #icon {
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    border-radius: 10px;
+                }
+            </style>
+
+            <!--END SPONSORS-->
+        </section>
+        <!--END SPONSORS SECTION-->
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/creative.min.js"></script>
 </body>
 
 <footer class="container-fluid text-center">
