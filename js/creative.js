@@ -80,7 +80,7 @@ const second = 1000,
     hour = minute * 60,
     day = hour * 24;
 
-let countDown = new Date('October 13, 2018 10:00:00').getTime(),
+let countDown = new Date('October 14, 2018 13:00:00').getTime(),
     x = setInterval(function () {
 
         let now = new Date().getTime(),
