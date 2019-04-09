@@ -18,3 +18,4 @@ Instructions on Using Sublime Text to Edit Website
 	git push
 8. It will ask for your github username and password, so put it in
 9. Then you can go to github and it should show everything you changed!
+10. If you go back later to make edits make sure you type in git pull to retrieve any edits that someone else may have made on github
