@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     font-size: 18px;
     letter-spacing: 2px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .project {
