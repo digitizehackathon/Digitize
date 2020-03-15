@@ -190,6 +190,124 @@ Shadow: #2369a8;
                 font-size: 11px
             }
         }
+
+
+
+
+        /* Popup container */
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        /* The actual popup (appears on top) */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 100px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Toggle this class when clicking on the popup container (hide and show the popup) */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+
+
+        .overlay-container {
+            position: relative;
+            height: 350px;
+            float: left;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: grey;
+        }
+
+        .overlay-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 15px;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
     </style>
 
 </head>
@@ -240,45 +358,161 @@ Shadow: #2369a8;
 
     <section id="team" class="bg-primary">
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <h2 class="section-heading text-center" style="color: white;">Our Team</h2>
-        <hr my-4 />
+        <br>
+        <!-- <hr my-4 /> -->
+        <br>
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides ">
-                <div class="numbertext">1 / 4</div>
-                <img src="img/team/2020/LeadOrganizer.jpeg" style="width: 32%; height: 350px;">
-                <!-- <div class="text" style="x: 20">Lynbrook High</div> -->
-                </a> <img src="img/team/2020/OperationsLead.jpeg" style="width: 32%; height: 350px;">
-                <!-- <div class="text">Lynbrook High</div> -->
+            <div class="mySlides w3-animate-fading">
 
-                <img src="img/team/2020/Operation2.jpeg" style="width: 32%; height: 350px;">
-                <!-- <div class="text">Lynbrook High</div> -->
+                <div class="row">
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/LeadOrganizer.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Emily Chen is currently a junior at Lynbrook High School, and currently the lead organizer for Digitize. She loves participating in clubs at school and enjoys playing badminton and painting when she has free time. She is drawn to Digitize because of the unique themes that it holds, and hopes that everybody gets inspired to create new projects to benefit our world.
+                                    <br>
+                                    <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                        <a href="https://www.linkedin.com/in/emily-chen-962a37178/" target="_blank"><i
+                                                class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100018066641595"
+                                            target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/OperationsLead.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">Anthony Rodriguez is a sophomore at Aragon High School, and is happy to be the Operation Lead for Digitize III. He loves computer science and leads a team in organizing this year's event. He hopes to create an experience students like him will remember.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Operation2.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">Vijaya is currently a junior at Lynbrook High School. She loves baking, reading and taking naps. This year, she’s really looking forward to seeing all the projects at Digitize that work towards the core themes and cannot wait to see everyone’s creativity!! Most importantly, she hopes everyone can have fun and learn something at Digitize. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
-            <div class="mySlides ">
-                <div class="numbertext">2 / 4</div>
-                <img src="img/team/2020/Operation3.jpeg" style="width: 32%; height: 350px;">
-                <img src="img/team/2020/SponsorshipLead.jpeg" style="width: 32%; height: 350px;">
-                <img src="img/team/2020/Sponsorship1.jpeg" style="width: 32%; height: 350px;">
-                <!-- <div class="text">Caption Two</div> -->
+            <div class="mySlides w3-animate-fading">
+                <div class="row">
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Operation3.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Aileen Mi is currently a junior at Lynbrook High School. She is drawn to Digitize's core principles, particularly having an interest in environmental conservation, and hopes to share her passion through this event! Outside of CS, she enjoys discovering new music, playing with her cat, and napping.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/SponsorshipLead.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">Amanda, the sponsorship lead, is a sophomore at Aragon High School. She is passionate about parliamentary debate, politics, and a wide variety of topics. She also enjoys track and field and volleyball.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Sponsorship1.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Kaushal Ramesh, AVHS 2022 Pleasanton, CA. Soccer, Track & Volleyball. "Living life 1 day at a time"                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="mySlides ">
-                <div class="numbertext">3 / 4</div>
-                <img src="img/team/2020/Sponsorship2.jpeg" style="width: 32%; height: 350px;">
-                <img src="img/team/2020/Sponsorship3.jpeg" style="width: 32%; height: 350px;">
-                <img src="img/team/2020/Outreach1.jpeg" style="width: 32%; height: 350px;">
-                <!-- <div class="text">Caption Three</div> -->
+            <div class="mySlides w3-animate-fading">
+                 <div class="row">
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Sponsorship2.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Hi! My name is Rohan Kaushal and I’m a sophomore at Amador Valley High School. I love coding, so it goes without saying that I‘m a huge fan of hackathons as well. I had a great experience at Digitize II last year, which is the reason I am helping out at Digitize III. Looking forward to it!                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Sponsorship3.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Stephanie Lin
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Outreach1.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Ashish Jayamohan is currently a sophomore at Branham High School. Apart from programming, Ashish enjoys playing instruments, from playing violin in an orchestra to playing drums in his free time. Mainly, he enjoys hacking and cryptography as it involves heavy real world applications.                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="mySlides ">
-                <div class="numbertext">4 / 4</div>
-                <img src="img/team/2020/Outreach2.jpeg" style="width: 32%; height: 350px;">
-                <!-- <div class="text">Caption Three</div> -->
+            <div class="mySlides w3-animate-fading">
+                <div class="row">
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Outreach2.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Michelle Liu is currently a sophomore at Aragon High School and is on the Digitize Outreach Team. She enjoys photography and trying new foods. She also swims and plays water polo for her school.                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/TechLead.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Laksh Bhambhani is currently a sophomore at Homestead High School and is on the Digitize Tech Team. Apart from coding, i love to spend time at our Robotics club, with my friends and playing instruments. I also lead Elementary school Robotics and soccer teams.
+                                    <br>
+                                    <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                        <a href="https://www.linkedin.com/in/lakshbhambhani/" target="_blank"><i
+                                                class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/lhbhambhani1107"
+                                            target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <!-- <div class="overlay-container" style="width: 100%;">
+                            <img src="img/team/2020/Sponsorship3.jpeg" class="image">
+                            <div class="overlay">
+                                <div class="text">
+                                    Stephanie Lin
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
             </div>
+
 
             <!-- Next and previous buttons
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -309,11 +543,11 @@ Shadow: #2369a8;
                     slides[i].style.display = "none";
                     // dots[i].className += "active";
                 }
-                
+
                 slideIndex++;
                 if (slideIndex > slides.length) { slideIndex = 1 }
                 slides[slideIndex - 1].style.display = "block";
-                setTimeout(showSlides, 3500); // Change image every 2 seconds
+                setTimeout(showSlides, 7000); // Change image every 2 seconds
             }
 
             // Thumbnail image controls
