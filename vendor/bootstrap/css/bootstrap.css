@@ -3033,6 +3033,10 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
 .dropdown-menu-right {
   right: 0;
   left: auto;

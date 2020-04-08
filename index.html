@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-<!--
-    DIGITIZE WEBSITE COMMENTING AND EDITING RULES by Sheryl
-
-    - all sections should have a beginning comment and an end comment
-        -EX: SECTION ..........some code.......END SECTION
-    - Don't add or delete any of the links or libraries below or else the whole website's styling will be messed up
-    
-COLOR SCHEME:
-Dom: #1e73be;
-Sub:white;
-Accent: #88C425;
-Shadow: #2369a8;
--->
-
-
-
-
 <head>
     <!--LINKS AND LIBRARIES-->
     <meta charset="utf-8">
@@ -65,7 +46,7 @@ Shadow: #2369a8;
     <link href="css/creative.min.css" rel="stylesheet">
     <!--END LINKS AND LIBRARIES-->
 
-    <style>
+    <!-- <style>
         * {
             box-sizing: border-box
         }
@@ -193,19 +174,69 @@ Shadow: #2369a8;
                 font-size: 11px
             }
         }
-    </style>
+
+        /* .modal-backdrop {
+            opacity: 0.5 !important;
+            background-color: transparent !important;
+        } */
+    </style> -->
+
+    <script>
+        $(document).ready(function () {
+            showPopup();
+        });
+
+        function showPopup() {
+            setTimeout(
+                function () {
+                    $('#popup2').modal('show');
+                }, 2000);
+        }
+    </script>
+
+
 
 </head>
 
 <body id="page-top">
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top" id="mainNav">
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade dialog" id="popup2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="false">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Digitize Mentorship Program!!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    As part of our initiative for encouraging students to use Computer Science to create projects that
+                    impact their community, we have created a mentorship program where we will be pairing up high
+                    schools students who are proficient in CS with middle/high school students from underrepresented
+                    areas across the nation to teach them various aspects of CS. If you are interested, click Learn More
+                    for more information and sign ups.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" style="color: white;" data-dismiss="modal"
+                        onclick="window.open('mentorshipprogram.html');">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
         <div class="container">
             <span class="glyphicon glyphicon-align-left" aria-hidden="true">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" height="42"
                         width="42" style="border-radius: 50%;" /></a>
             </span>
-            <a class="navbar-link js-scroll-trigger" href="#page-top"> Digitize </a>
+            <a class="navbar-link js-scroll-trigger" href="index.html"> Digitize </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -213,24 +244,42 @@ Shadow: #2369a8;
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="themes.html">Themes</a>
+                    <li class="nav-link">
+                        <a class="nav-link" href="themes.html">Themes</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="faq.html">FAQs</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="mentor.html">Mentors & Judges</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="team.html">Our Team</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="pastyears.html">Earlier Years</a>
                     </li>
+                    <li class="nav-link dropdown dropdown-hoverable">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="mentorshipprogram.html">Mentorship Program</a>
+                        </div>
+                    </li>
+
+                    <!-- <script>
+                        $('.dropdown-hoverable').hover(function () {
+                            $(this).children('[data-toggle="dropdown"]').click();
+                        }, function () {
+                            $(this).children('[data-toggle="dropdown"]').click();
+                        });
+                    </script> -->
+
                     <!--
                     <li class="nav-item">
                         <a class="nav-link" style="color: #88C425;" href="https://digitize.typeform.com/to/NXWvSD">Register Now</a>
@@ -260,17 +309,17 @@ Shadow: #2369a8;
                     </h4>
                 </div>
                 <div class="col-lg-8 mx-auto">
-                    <!--BUTTONS START-->
+                    <!--BUTTONS START -->
                     <!--BUTTON TO SIGN UP SECTION-->
                     <!-- <a class="btn offset"
                         style="color: white; padding:15px; margin-top: 5px; margin-bottom: 80px; margin-right:40px"
                         target="_blank" href="">Judge/Mentor Sign Up</a>
-                    <a class="btn offset" style="color: white; padding:15px; margin-top: 5px; margin-bottom: 80px"
+                        <a class="btn offset" style="color: white; padding:15px; margin-top: 5px; margin-bottom: 80px"
                         target="_blank" href="">SIGN UP NOW</a> -->
                     <!--END BUTTONS TO SIGN UP-->
                     <!--<p class="text-faded mb-5"> Date/Time</p>-->
                 </div>
-                <!--BUTTON STYLE-->
+                <!-- BUTTON STYLE -->
                 <style>
                     .offset {
                         box-shadow: 0.3em 0.3em 0 0 #2369a8, inset 0.3em 0.3em 0 0 #1e73be;
@@ -286,6 +335,8 @@ Shadow: #2369a8;
             </div>
         </div>
     </header>
+
+
     <!--END HEADER-->
     <!--TIMER-->
 
@@ -301,6 +352,8 @@ Shadow: #2369a8;
     -->
 
     <!--END TIMER-->
+
+
 
     <!--ABOUT AND PICTURES-->
     <section class="bg-primary" id="about" style="height:600px">
@@ -346,6 +399,8 @@ Shadow: #2369a8;
                                         });
                                     }
 
+
+
                                     var runOnce = false;
 
                                     $(window).scroll(function () {
@@ -380,7 +435,10 @@ Shadow: #2369a8;
                                     goal is to educate students about computer science and programming by providing them with
                                     workshops and mentors, so by the end of the hackathon, each team will have a project to
                                     present in front of our judging panel.-->
-                                    Digitize Hackathon III is a free 24 hour coding event for high school students in the Bay Area. We specifically focus on our three fundamental themes: Environmental Conservation, Health & Wellness, and Social Welfare, to encourage students to use technology for social good and create projects that impact the community.
+                                    Digitize Hackathon III is a free 24 hour coding event for high school students in
+                                    the Bay Area. We specifically focus on our three fundamental themes: Environmental
+                                    Conservation, Health & Wellness, and Social Welfare, to encourage students to use
+                                    technology for social good and create projects that impact the community.
 
                                     <br> <br>
                                     <a class="btn offset" style="color: white; padding:15px; margin-top: 5px;"
@@ -398,17 +456,21 @@ Shadow: #2369a8;
     </section>
     <!--END ABOUT-->
 
+
     <section>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <div class="row">
             <div class="col-md-6">
+                <br><br>
                 <div class="slideshow-container">
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides w3-animate-fading">
                         <img src="img/eventpics/2019_1.jpg" style="width:70%; height: 70%; margin-left: 15%;">
-                    </div><div class="mySlides w3-animate-fading">
+                    </div>
+                    <div class="mySlides w3-animate-fading">
                         <img src="img/eventpics/2019_4.jpg" style="width:70%; height: 70%; margin-left: 15%;">
-                    </div><div class="mySlides w3-animate-fading">
+                    </div>
+                    <div class="mySlides w3-animate-fading">
                         <img src="img/eventpics/2019_3.jpg" style="width:70%; height: 70%; margin-left: 15%;">
                     </div>
                     <div class="mySlides w3-animate-fading">
@@ -507,18 +569,20 @@ Shadow: #2369a8;
                             class="fa fa-users" aria-hidden="true" style="color:white; display: inline-block;"></i>
                         <div class="counter" style="display: inline-block;" data-target="215">0</div>
                     </h2>
-                    <h4 class="section-heading text-white" style="text-align: center; text-transform: none; margin-top: 0px;">People have
+                    <h4 class="section-heading text-white"
+                        style="text-align: center; text-transform: none; margin-top: 0px;">People have
                         attended Digitize</h4>
                 </div>
-
+                <br>
                 <div class="faqshadow"
-                    style="background-color: #90d9b8; width: 70%; height: 33%;  margin-left: 15%; margin-right: 15%;">
+                    style="background-color: #90d9b8; width: 70%; height: 45%;  margin-left: 15%; margin-right: 15%;">
                     <h2 class="display-5 theme-icon text-white" style="text-align:center; color: black;">
                         <i class="fa fa-graduation-cap" aria-hidden="true"
                             style="color:white; display: inline-block;"></i>
                         <div class="counter" style="display: inline-block;" data-target="43">0</div>
                     </h2>
-                    <h4 class="section-heading text-white" style="text-align: center; text-transform: none; margin-top: 0px;">High
+                    <h4 class="section-heading text-white"
+                        style="text-align: center; text-transform: none; margin-top: 0px;">High
                         Schools have been a part of Digitize</h4>
                 </div>
 
@@ -935,7 +999,7 @@ Shadow: #2369a8;
 
 
     <!--END SPONSORS-->
-    </section>
+    <!-- </section> -->
     <!--END SPONSORS SECTION-->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
