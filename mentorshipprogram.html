@@ -155,7 +155,7 @@
     <section>
         <div class="row">
             <div class="col-md-6">
-                <img src="img/mentorship//mentorship.jpg" style="width:80%; height: 100%; margin-left: 5%;">
+                <img src="img/mentorship//mentorship.jpg" style="width:80%; height: 80%; margin-left: 5%;">
             </div>
             <div class="col-md-6">
                 <p style="margin-right: 5%; margin-top: 8%;">
@@ -169,15 +169,21 @@
                 </p>
                 <br>
                 <P>
-                    Sessions will be one-on-one for the student to have a welcoming environment to ask questions along with the opportunity to bond with their mentor. Each pair must meet for at least 2-3 hours per week, but are welcome to meet more frequently.
+                    Sessions will be one-on-one for the student to have a welcoming environment to ask questions along
+                    with the opportunity to bond with their mentor. Each pair must meet for at least 2-3 hours per week,
+                    but are welcome to meet more frequently.
                 </P>
                 <br>
                 <a class="btn offset"
                     style="color: black; padding:15px; margin-top: 5px; margin-bottom: 80px; width: 40%; margin-left: 4%; margin-right: 4%;"
-                    target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScFpTjh4JOyfj6LeH5iJ1fWhIphOWLf4LFhYST80FXQC_haqg/viewform">Mentor Sign Ups</a>
+                    target="_blank"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScFpTjh4JOyfj6LeH5iJ1fWhIphOWLf4LFhYST80FXQC_haqg/viewform">Mentor
+                    Sign Ups</a>
                 <a class="btn offset"
                     style="color: black; padding:15px; margin-top: 5px; margin-bottom: 80px; width: 40%; margin-left: 4%; margin-right: 4%;"
-                    target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfoxkBZyHpqdZUpqSXfDOTLxfLLWwFu-tOMAz2sYzSto-Gwyg/viewform">Tutee Sign Ups</a>
+                    target="_blank"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfoxkBZyHpqdZUpqSXfDOTLxfLLWwFu-tOMAz2sYzSto-Gwyg/viewform">Tutee
+                    Sign Ups</a>
                 <style>
                     .offset {
                         box-shadow: 0.3em 0.3em 0 0 #2369a8, inset 0.3em 0.3em 0 0 #1e73be;
@@ -199,7 +205,7 @@
                         class="fa fa-4x fa-calendar" aria-hidden="true" style="color: black;"></i>
                     <br><br>
                 </h2>
-                <h3  style="text-align:center; color: black; ">
+                <h3 style="text-align:center; color: black; ">
                     June 1st - June 28th<br>
                     July 6th - Aug 2
                 </h3>
@@ -220,11 +226,226 @@
         </div>
     </section>
 
-    <section class="bg-primary" style="color: white; padding-bottom: 5%;">
-        <h3 class="display-5 text-center fadezzz"
-            style="padding-top: 10px; padding-bottom: 10px; color: white; font-weight:bold;">Levels Offered
+    <section class="bg-primary">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <!--ABOUT DIGITIZE DESCRIPTION-->
+                    <table style="width:100%">
+                        <tr>
+                            <th style="width:50%">
+                                <img src="img/mentorship/demographics.png" width="100%" height="50%">
+                            </th>
+                            <th style="width:50%; padding-left:10%">
+                                <h1 class="section-heading text-white">450 students from</h1>
+                                <!-- <p class="text-faded mb-4">students from</p> -->
+                                <!-- <hr class="light my-4" style="center"> -->
+                                <br><br>
+                                <div class="faqshadow"
+                                    style="background-color: #90d9b8; width: 100%; height: 33%;  ">
+                                    <h2 class="display-5 theme-icon text-white"
+                                        style="text-align:center; color: black;"><i class="fa fa-users"
+                                            aria-hidden="true" style="color:white; display: inline-block;"></i>
+                                        <div class="counter" style="display: inline-block;" data-target="31">0</div>
+                                    </h2>
+                                    <h4 class="section-heading text-white"
+                                        style="text-align: center; text-transform: none; margin-top: 0px;">United States</h4>
+                                </div>
+                                <br>
+                                <div class="faqshadow"
+                                    style="background-color: #90d9b8; width: 100%; height: 45%;  ">
+                                    <h2 class="display-5 theme-icon text-white"
+                                        style="text-align:center; color: black;">
+                                        <i class="fa fa-graduation-cap" aria-hidden="true"
+                                            style="color:white; display: inline-block;"></i>
+                                        <div class="counter" style="display: inline-block;" data-target="12">0</div>
+                                    </h2>
+                                    <h4 class="section-heading text-white"
+                                        style="text-align: center; text-transform: none; margin-top: 0px;">Countries</h4>
+                                </div>
+
+                                <script>
+                                    const counters = document.querySelectorAll('.counter');
+                                    const speed = 400; // The lower the slower
+
+                                    $(window).scroll(function () {
+                                        counters.forEach(counter => {
+                                            const updateCount = () => {
+                                                const target = +counter.getAttribute('data-target');
+                                                const count = +counter.innerText;
+
+                                                // Lower inc to slow and higher to slow
+                                                const inc = target / speed;
+
+                                                // console.log(inc);
+                                                console.log(target);
+
+                                                // Check if target is reached
+                                                if ($(window).scrollTop() > 1200) {
+                                                    if (count < target) {
+                                                        // Add inc to count and output in counter
+                                                        counter.innerText = count + 1;
+                                                        // Call function every ms
+                                                        setTimeout(updateCount, 42);
+                                                    } else {
+                                                        counter.innerText = target;
+                                                    }
+                                                }
+                                            };
+
+                                            updateCount();
+                                        });
+                                    });
+                                </script>
+                            </th>
+                        </tr>
+                    </table>
+                    <!--END ABOUT DIGITIZE DESCRIPTION-->
+
+                </div>
+            </div>
+    </section>
+
+    <section style=" padding-bottom: 5%;">
+        <h3 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; font-weight:bold;">
+            Hear from our Tutees
         </h3>
         <br>
+        <h4 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; font-weight:bold;">
+            Great Opportunity
+        </h4>
+        <div class="title-arch" style="padding-left: 5%; padding-right: 5%;">
+            <p>“My experience with the Digitize Mentorship Program has been an amazing one, not only have I learned more
+                about Python, but I also gained a new friend along the way. The program itself is an amazing one and I
+                am beyond glad to be able to say that I have had the opportunity to be able to participate in Digitize.”
+                <br><br>A. Gonzalez, Granada Hills, California
+
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-primary">
+        <div class="container text-center">
+            <!--add digitize sponsors-->
+            <h2 class="section-heading text-white">Mentors from</h2>
+            <hr class="light my-4" />
+            <br>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <a href="https://uwaterloo.ca" target="_blank">
+                        <img style="width:90%" src="img/mentorship/colleges/uwaterloo.png" id="icon" />
+                    </a>
+                </div>
+
+                <div class="col-sm-4">
+                    <a href="https://www.caltech.edu" target="_blank">
+                        <img style="width:90%" src="img/mentorship/colleges/caltech.png" id="icon" />
+                    </a>
+                    <br><br>
+                    <a href="https://www.cmc.edu" target="_blank" style="padding-top: 5%;">
+                        <img style="width:90%" src="img/mentorship/colleges/claremont.png" id="icon" />
+                    </a>
+                    <br><br>
+                    <a href="https://www.imperial.ac.uk" target="_blank">
+                        <img style="width:90%" src="img/mentorship/colleges/imperial.png" id="icon" />
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://umich.edu" target="_blank">
+                        <img style="width:90%" src="img/mentorship/colleges/umichigan.png" id="icon" />
+                    </a>
+                    <br><br>
+                    <a href="https://www.washington.edu" target="_blank" style="padding-top: 5%;">
+                        <img style="width:90%" src="img/mentorship/colleges/uWash.png" id="icon" />
+                    </a>
+                    <br><br>
+                    <a href="https://www.ucla.edu" target="_blank">
+                        <img style="width:90%" src="img/mentorship/colleges/ucla.png" id="icon" />
+                    </a>
+                </div>
+
+            </div>
+            <br>
+            <h4 style="color: white;">and many more...</h4>
+            <br>
+            <style>
+                ul.no-bullets {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                }
+            </style>
+            <div class="row" style="color: white;">
+                <div class="col-sm-4">
+                    <ul class="no-bullets">
+                        <li>
+                            University ofHouston
+                        </li>
+                        <li>
+                            University of California San Diego
+                        </li>
+                        <li>
+                            University of Texas at Dallas
+                        </li>
+                        <li>
+                            CSU-Northridge
+                        </li>
+                        <li>
+                            De Montfort
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="no-bullets">
+                        <li>
+                            University of Illinois at Chicago
+                        </li>
+                        <li>
+                            Rhode Island school of Design
+                        </li>
+                        <li>
+                            Le Moyne College
+                        </li>
+                        <li>
+                            Ohio State
+                        </li>
+                        <li>
+                            Houston CC
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="no-bullets">
+
+
+                        <li>
+                            Univeristy of Massachusetts Boston
+                        </li>
+                        <li>
+                            Smith College
+                        </li>
+                        <li>
+                            Southern Methodist University
+                        </li>
+                        <li>
+                            Rutgers University
+                        </li>
+                        <li>
+                            Brandeis UNiversity
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section style=" padding-bottom: 5%;">
+        <h3 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; font-weight:bold;">
+            Levels Offered
+        </h3>
         <div class="row">
             <div class="col-sm-4 faqshadow">
                 <br>
@@ -237,11 +458,11 @@
                 <p style="text-transform:none; text-align: center;">
                     Teaches them how to code in HTML, Java, Python, or language of their choice. Introduces them to
                     basic statements and methods (if statements, if-else, arrays, recursion, etc)
-                    <ul>
-                        <li>
-                            Mentors must have taken Intro to CS or APCS or equivalent
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        Mentors must have taken Intro to CS or APCS or equivalent
+                    </li>
+                </ul>
                 </p>
             </div>
             <div class="col-sm-4 faqshadow">
@@ -257,11 +478,11 @@
                     Teaches them more advanced knowledge of HTML, Java, Python, or language of their choice. Introduces
                     them to more complex features of the language (ie: Object Oriented Programming, Binary Trees, Heaps,
                     Queues/Stacks)
-                    <ul>
-                        <li>
-                            Mentors must have proficient knowledge in the subject
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        Mentors must have proficient knowledge in the subject
+                    </li>
+                </ul>
                 </p>
             </div>
             <div class="col-sm-4 faqshadow">
@@ -284,17 +505,21 @@
 
         </div>
         <br>
-        <h3 class="display-5 text-center fadezzz"
-            style="padding-top: 10px; padding-bottom: 10px; color: white; font-weight:bold;">Middle and High Schoolers
+        <h3 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px;  font-weight:bold;">
+            Middle and High Schoolers
             welcome to Sign Up!
         </h3>
         <br>
-        <a class="btn offset text-white"
+        <a class="btn offset"
             style="color: black; padding:15px; margin-top: 5px; margin-bottom: 80px; width: 40%; margin-left: 4%; margin-right: 4%;"
-            target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScFpTjh4JOyfj6LeH5iJ1fWhIphOWLf4LFhYST80FXQC_haqg/viewform">Mentor Sign Ups</a>
-        <a class="btn offset text-white"
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScFpTjh4JOyfj6LeH5iJ1fWhIphOWLf4LFhYST80FXQC_haqg/viewform">Mentor
+            Sign Ups</a>
+        <a class="btn offset"
             style="color: black; padding:15px; margin-top: 5px; margin-bottom: 80px; width: 40%; margin-left: 4%; margin-right: 4%;"
-            target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfoxkBZyHpqdZUpqSXfDOTLxfLLWwFu-tOMAz2sYzSto-Gwyg/viewform">Tutee Sign Ups</a>
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfoxkBZyHpqdZUpqSXfDOTLxfLLWwFu-tOMAz2sYzSto-Gwyg/viewform">Tutee
+            Sign Ups</a>
         <style>
             .offset {
                 box-shadow: 0.3em 0.3em 0 0 #2369a8, inset 0.3em 0.3em 0 0 #1e73be;
