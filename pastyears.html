@@ -51,12 +51,8 @@ Shadow: #2369a8;
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link
-        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link
-        href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <!-- Custom styles-->
@@ -70,12 +66,12 @@ Shadow: #2369a8;
             font-family: 'Lato', sans-serif;
             margin: 0
         }
-
+        
         header {
             font-family: 'Lato', sans-serif;
             margin: 0
         }
-
+        
         footer {
             font-family: 'Lato', sans-serif;
             margin: 0
@@ -84,7 +80,6 @@ Shadow: #2369a8;
 </head>
 
 <body id="page-top">
-    <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
         <div class="container">
             <span class="glyphicon glyphicon-align-left" aria-hidden="true">
@@ -92,21 +87,13 @@ Shadow: #2369a8;
                         width="42" style="border-radius: 50%;" /></a>
             </span>
             <a class="navbar-link js-scroll-trigger" href="index.html"> Digitize </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-link">
-                        <a class="nav-link" href="themes.html">Themes</a>
-                    </li>
-                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="faq.html">FAQs</a>
-                    </li>
-                    <li class="nav-link">
-                        <a class="nav-link js-scroll-trigger" href="mentor.html">Mentors & Judges</a>
                     </li>
                     <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="team.html">Our Team</a>
@@ -114,132 +101,206 @@ Shadow: #2369a8;
                     <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a>
                     </li>
-                    <li class="nav-link">
-                        <a class="nav-link js-scroll-trigger" href="pastyears.html">Earlier Years</a>
+                    <li class="nav-link dropdown dropdown-hoverable">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hackathons
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="themes.html">Themes</a>
+                            <a class="dropdown-item" href="pastyears.html">Earlier Years</a>
                     </li>
                     <li class="nav-link dropdown dropdown-hoverable">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Resources
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Programs
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="mentorshipprogram.html">Mentorship Program</a>
                         </div>
                     </li>
-
-                    <!-- <script>
-                        $('.dropdown-hoverable').hover(function () {
-                            $(this).children('[data-toggle="dropdown"]').click();
-                        }, function () {
-                            $(this).children('[data-toggle="dropdown"]').click();
-                        });
-                    </script> -->
-
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #88C425;" href="https://digitize.typeform.com/to/NXWvSD">Register Now</a>
-                    </li>-->
                 </ul>
+                </div>
             </div>
-        </div>
     </nav>
     <!--END NAVIGATION-->
 
 
-    <section class="bg-primary">
+
+    <style>
+        #tutor {
+            background-color: rgb(189, 212, 251);
+        }
+        
+        #writer {
+            background-color: rgb(253, 240, 219);
+        }
+        
+        #tech {
+            background-color: rgb(240, 235, 248);
+        }
+        
+        #designMarketing {
+            background-color: rgb(243, 250, 247);
+        }
+        
+        * {
+            box-sizing: border-box
+        }
+        /* Style the tab */
+        
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 20%;
+            height: 390px;
+        }
+        /* Style the buttons that are used to open the tab content */
+        
+        .tab button {
+            display: block;
+            background-color: inherit;
+            color: black;
+            padding: 22px 16px;
+            width: 100%;
+            border: none;
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        /* Change background color of buttons on hover */
+        
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        /* Create an active/current "tab button" class */
+        
+        .tab button.active {
+            background-color: #ccc;
+        }
+        /* Style the tab content */
+        
+        .tabcontent {
+            /* margin: 0 auto;
+   display: none;
+   height: 70vw; */
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 70vw;
+        }
+    </style>
+
+    <script>
+        function openForm(evt, formName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(formName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+    <section class="bg-secondary">
         <div class="row no-gutters">
             <div class="col-md-12 theme-header text-center" id="themes" style="height: 90px">
-                <h1 class="display-5 text-center fadezzz"
-                    style="padding-top: 10px; padding-bottom: 10px; color: white; font-weight:bold">Past Years</h1>
-                <hr class="my-4">
+                <h1 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; color: white; font-weight:bold">Past Years</h1>
             </div>
 
             <div style="margin-left: auto; margin-right: auto; margin-bottom: 30px; color: white;">
-                
-            <hr class="light my-4">
-            <div class="container text-center">
-                <div class="row">
-                    <!--FIRST QUESTION: for editing-->
-                    <div class="col-sm-4 faqshadow">
-                        <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-globe"
-                            aria-hidden="true" style="color: white;"></i></h2>
-                        <h4 class="section-heading text-white">2019 Sponsors</h4>
-                        <p class="text-faded mb-4">
-                            <br>
-                            <a href="2019sponsors.html" target="_blank">
-                                <img src="img/pastyears/2019Website.jpeg" style="width: 100%; height:200%;">
-                            </a>                        </p>
-                    </div>
-                    <!--END FIRST QUESTION-->
-                    <div class="col-sm-4 faqshadow" style="width: 800px;">
-                        <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-tasks"
-                            aria-hidden="true" style="color: white;"></i></h2>
-                        <h4 class="section-heading text-white">2019 Submissions</h4>
-                        <p class="text-faded mb-4">
-                            <br>
-                            <a href="2019submissions.html" target="_blank">
-                                <img src="img/pastyears/2019Submissions.jpeg" style="width: 100%; height:200%;">
-                            </a>   
-                        </p>
-                    </div>
-                    <div class="col-sm-4 faqshadow">
-                        <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-picture-o"
-                            aria-hidden="true" style="color: white;"></i></h2>
-                        <h4 class="section-heading text-white">2019 Media</h4>
-                        <p class="text-faded mb-4">
-                            <br>
-                            <a href="https://photos.app.goo.gl/XMj4BnZjnCwmxBfP9" target="_blank">
-                                <img src="img/pastyears/2019Media.jpeg" style="width: 100%; height:200%;">
-                            </a>
-                        </p>
-                    </div>
 
-                </div>
-            </div>
-            </div>
-
-            <div style=" margin-left: auto; margin-right: auto; margin-bottom: 30px; color: white;">
-                
-                <hr class="light my-4">
                 <div class="container text-center">
                     <div class="row">
                         <!--FIRST QUESTION: for editing-->
-                        <div class="col-sm-4 faqshadow">
-                            <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-globe"
-                                aria-hidden="true" style="color: white;"></i></h2>
-                            <h4 class="section-heading text-white">2018 Sponsors</h4>
+                        <!-- <div class="col-sm-4 faqshadow">
+                            <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-globe" aria-hidden="true" style="color: white;"></i></h2>
+                            <h4 class="section-heading text-white">2019 Sponsors</h4>
                             <p class="text-faded mb-4">
                                 <br>
-                                <a href="2018sponsors.html" target="_blank">
-                                    <img src="img/pastyears/2018Website.jpeg" style="width: 100%; height:200%;">
-                                </a>                               </p>
-                        </div>
-                        <!--END FIRST QUESTION-->
-                        <div class="col-sm-4 faqshadow" style="width: 800px;">
-                            <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-tasks"
-                                aria-hidden="true" style="color: white;"></i></h2>
-                            <h4 class="section-heading text-white">2018 Submissions</h4>
-                            <p class="text-faded mb-4">
-                                <br>
-                                <a href="https://digitize.devpost.com/submissions" target="_blank">
-                                    <img src="img/pastyears/2018Submissions.jpeg" style="width: 100%; height:200%;">
-                                </a>       
+                                <a href="2019sponsors.html" target="_blank">
+                                    <img src="img/pastyears/2019Website.jpeg" style="width: 100%; height:200%;">
+                                </a>
                             </p>
-                        </div>
-                        <div class="col-sm-4 faqshadow">
-                            <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-picture-o"
-                                aria-hidden="true" style="color: white;"></i></h2>
+                        </div> -->
+                        <!--END FIRST QUESTION-->
+
+                        <div class="col-sm-6 faqshadow">
+                            <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-picture-o" aria-hidden="true" style="color: white;"></i></h2>
                             <h4 class="section-heading text-white">2018 Media</h4>
                             <p class="text-faded mb-4">
                                 <br>
                                 <a href="https://photos.app.goo.gl/2uuUNNJgpSt7G5Yg6" target="_blank">
                                     <img src="img/pastyears/2018Media.jpeg" style="width: 100%; height:200%;">
-                                </a>                               </p>
+                                </a>
+                            </p>
                         </div>
-    
+                        <div class="col-sm-6 faqshadow">
+                            <h2 class="display-5 theme-icon" style="text-align:center;"><i class="fa fa-picture-o" aria-hidden="true" style="color: white;"></i></h2>
+                            <h4 class="section-heading text-white">2019 Media</h4>
+                            <p class="text-faded mb-4">
+                                <br>
+                                <a href="https://photos.app.goo.gl/XMj4BnZjnCwmxBfP9" target="_blank">
+                                    <img src="img/pastyears/2019Media.jpeg" style="width: 100%; height:200%;">
+                                </a>
+                            </p>
+                        </div>
+
                     </div>
                 </div>
+            </div>
+
+            <div style=" margin-left: auto; margin-right: auto; margin-bottom: 30px; color: white;">
+
+                <div class="container text-center">
+                    <div class="row">
+                        <!--FIRST QUESTION: for editing-->
+                        <!-- <div class="col-sm-4 faqshadow">
+                            <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-globe" aria-hidden="true" style="color: white;"></i></h2>
+                            <h4 class="section-heading text-white">2018 Sponsors</h4>
+                            <p class="text-faded mb-4">
+                                <br>
+                                <a href="2018sponsors.html" target="_blank">
+                                    <img src="img/pastyears/2018Website.jpeg" style="width: 100%; height:200%;">
+                                </a>
+                            </p>
+                        </div>
+                        END FIRST QUESTION -->
+                        <div class="col-sm-6 faqshadow" style="width: 800px;">
+                            <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-tasks" aria-hidden="true" style="color: white;"></i></h2>
+                            <h4 class="section-heading text-white">2018 Submissions</h4>
+                            <p class="text-faded mb-4">
+                                <br>
+                                <a href="https://digitize.devpost.com/submissions" target="_blank">
+                                    <img src="img/pastyears/2018Submissions.jpeg" style="width: 100%; height:200%;">
+                                </a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6 faqshadow" style="width: 800px;">
+                            <h2 class="display-5 theme-icon" style="text-align:center; color: white;"><i class="fa fa-tasks" aria-hidden="true" style="color: white;"></i></h2>
+                            <h4 class="section-heading text-white">2019 Submissions</h4>
+                            <p class="text-faded mb-4">
+                                <br>
+                                <a href="2019submissions.html" target="_blank">
+                                    <img src="img/pastyears/2019Submissions.jpeg" style="width: 100%; height:200%;">
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
+            </div>
 
 
             <div class="clearfix"></div>
@@ -260,22 +321,21 @@ Shadow: #2369a8;
 
 
 
-    <!-- FOOTER -->
- <footer class="container-fluid text-center">
+<footer class="container-fluid text-center">
     <style>
         .fa {
             padding: 15px;
             font-size: 35px;
             color: #43b5ff;
         }
-
+        
         .fa:hover {
             color: #cefde2;
             text-decoration: none;
         }
     </style>
 
-    <div class="row">
+    <div class="row" style="padding-top: 1%;">
         <!--FIRST CONTACT COLUMN-->
         <div class="col-sm-4">
             <h3 class="btn">Contact us</h3>
@@ -283,12 +343,10 @@ Shadow: #2369a8;
             <br />
             <ul class="list-group list-group-flush" style="background-color: #1e73be; ">
                 <li style=" color:#000;font-size:15px;" class="list-group-item">
-                    <p class=" display-5">GENERAL INQUIRIES : <a
-                            href="mailto:general@digitizehackathon.tech">general@digitizehackathon.tech</a></p>
+                    <p>GENERAL INQUIRIES : <a href="mailto:general@digitizehackathon.tech">general@digitizehackathon.tech</a></p>
                 </li>
                 <li style=" color:#000;font-size:15px;" class="list-group-item">
-                    <p class=" display-5">SPONSORS : <a
-                            href="mailto:sponsors@digitizehackathon.tech">sponsors@digitizehackathon.tech</a></p>
+                    <p class=" display-5">SPONSORS : <a href="mailto:sponsors@digitizehackathon.tech">sponsors@digitizehackathon.tech</a></p>
                 </li>
             </ul>
         </div>
@@ -298,9 +356,8 @@ Shadow: #2369a8;
             <h3 class="btn">Connect with us</h3>
             <hr my-4 />
             <div class="container">
-                <a href="https://www.facebook.com/digitize.hackathon.3" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/digitizehacks" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/digitizehackathon/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/company/digitize-tech/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/digitizetech/" target="_blank" class="fa fa-instagram"></a>
             </div>
             <p>Copyright © 2020-2021 Digitize. All rights reserved.</p>
             <p>EIN 81-1543325 (Fiscal Sponsorship from HackPlus)</p>
@@ -308,26 +365,18 @@ Shadow: #2369a8;
         <!--END CONNECT COLUMN-->
         <!--THIRD CONTACT COLUMN-->
         <div class="col-sm-4" id="helpus">
-            <h3 class="btn"> Help Us! </h3>
+            <h3 class="btn">Links</h3>
 
             <br />
             <ul class="list-group list-group-flush" style="background-color: #1e73be; ">
-                <li style=" color:#000;font-size:15px;" class="list-group-item"><a target="_blank"
-                        href="img/sponsorship_prospectus.pdf" style="color:black;" class=" display-5">Be a
-                        Sponsor</a>
+                <li style=" color:#000;font-size:15px;" class="list-group-item"><a target="_blank" href="img/sponsorship_prospectus.pdf" style="color:black;" class=" display-5">Be a Sponsor</a>
                 </li>
-                <li style=" color:#000;font-size:15px;" class="list-group-item"><a target="_blank"
-                        href="https://tinyurl.com/digitizementorspeaker" style="color:black;" class=" display-5">Be
-                        a
-                        Mentor, Speaker, or Workshop Leader</a></li>
-                <li style=" color:#000;font-size:15px;" class="list-group-item"><a target="_blank"
-                        href="img/food_sponsorship_prospectus.pdf" style="color:black;" class=" display-5">Give Us
-                        Food!</a></li>
+                <li style=" color:#000;font-size:15px;" class="list-group-item"><a target="_blank" href="mentorshipprogram.html" style="color:black;" class=" display-5">Mentorship Program</a></li>
+
             </ul>
         </div>
         <!--END THIRD CONTACT COLUMN-->
     </div>
 </footer>
-<!-- FOOTER -->
 
 </html>
