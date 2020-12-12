@@ -1,25 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-<!--
-    DIGITIZE WEBSITE COMMENTING AND EDITING RULES by Sheryl
-
-    - all sections should have a beginning comment and an end comment
-        -EX: SECTION ..........some code.......END SECTION
-    - Don't add or delete any of the links or libraries below or else the whole website's styling will be messed up
-    
-COLOR SCHEME:
-Dom: #1e73be;
-Sub:white;
-Accent: #88C425;
-Shadow: #2369a8;
--->
-
-
-
-
 <head>
     <!--LINKS AND LIBRARIES-->
     <meta charset="utf-8">
@@ -27,6 +8,8 @@ Shadow: #2369a8;
     <meta name="description" content="Digitize Hackathon : September 28-29">
     <meta name="keywords" content="Hackathon,Code,Coding,Programming">
     <meta name="author" content="Digitize">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -41,13 +24,13 @@ Shadow: #2369a8;
 
 
     <!--FAVICON-->
-    <link rel="icon" href="/img/logo.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-    <title>Digitize III</title>
+    <title>Digitize Tech</title>
 
     <!-- Bootstrap core CSS -->
+    <link rel="icon" href="/img/logo.ico">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -79,7 +62,7 @@ Shadow: #2369a8;
     </style>
 
     <style>
-        * {
+        /* * {
             box-sizing: border-box
         }
         /* body {
@@ -313,11 +296,50 @@ Shadow: #2369a8;
             flex: 33.33%;
             padding: 5px;
         }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            border-radius: 5px;
+            /* 5px rounded corners */
+        }
+        /* Add rounded corners to the top left and the top right corner of the image */
+        
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        /* Add some padding inside the card container */
+        
+        .container {
+            padding: 2px 16px;
+        }
+        
+        .exec-card {
+            margin: 0 auto 5rem;
+            background: var(--lighter-color);
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .exec-name {
+            padding: 50px 30px;
+        }
+        
+        */
     </style>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
 </head>
 
 <body id="page-top">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
         <div class="container">
             <span class="glyphicon glyphicon-align-left" aria-hidden="true">
@@ -334,10 +356,15 @@ Shadow: #2369a8;
                         <a class="nav-link js-scroll-trigger" href="faq.html">FAQs</a>
                     </li>
                     <li class="nav-link">
-                        <a class="nav-link js-scroll-trigger" href="team.html">Our Team</a>
-                    </li>
-                    <li class="nav-link">
                         <a class="nav-link js-scroll-trigger" href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li class="nav-link dropdown dropdown-hoverable">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Team
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="team.html">Our Team</a>
+                            <a class="dropdown-item" href="pastdirectors.html">Past Directors</a>
                     </li>
                     <li class="nav-link dropdown dropdown-hoverable">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -357,297 +384,300 @@ Shadow: #2369a8;
                     </li>
                 </ul>
                 </div>
-            </div>
+                </div>
     </nav>
     <!--END NAVIGATION-->
 
-    <section id="team">
-
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <div class="col-md-12 theme-header text-center" id="themes" style="height: 90px">
-            <h1 class="display-5 text-center fadezzz" style="padding-top: 10px; padding-bottom: 10px; color: black; font-weight:bold">Our Team</h1>
-            <!-- <hr class="my-4"> -->
-        </div>
-        <!-- <hr my-4 /> -->
-        <br>
+    <section id="team" class="bg-secondary">
 
         <div class="container">
-            <div class="row">
-                <div class="column">
-                    <div class="overlay-container" style="width: 100%;">
-                        <img src="img/team/2021/Director.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                Amanda is currently a junior at Aragon High School. She is passionate about parliamentary debate, coding, and Digitize! In her free time, she enjoys biking, watching anime, and reading.
-
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.linkedin.com/in/amandahao/" target="_blank"><i
-                                                    class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
+            <div class="exec-card">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="img/team/2021/Director.jpg" class="image" style="width: 70%;">
                         </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="overlay-container" style="width: 100%;">
-                        <img src="img/team/2021/MarketingLead.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text">This is Amber's second year as the Marketing Director of Digitize. She oversees the @digitizetech social media posts, partnerships with other organizations, and advertisements. She enjoys playing oboe and badminton with friends.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/hambergor/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="overlay-container" style="width: 100%;">
-                        <img src="img/team/2021/OperationsLead1.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text">I’m a junior at Saratoga High School and I’m excited to join the Digitize Team as an Operations Lead this year! I enjoy coding, exercising, and watching shows in my free time. This year I’m looking forward to expanding Digitize
-                                and its mission even further and creating a lasting impact.
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/adithya__sp/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                    <a href="https://www.linkedin.com/in/adithya-peruvemba-08758a1b0/" target="_blank"><i
-                                                        class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
+                        <div class="col-md-6 col-sm-12 exec-name">
+                            <h2>Amanda Hao</h2>
+                            <h5>Executive Director</h5>
+                            <br>
+                            <p>Amanda is currently a junior at Aragon High School. She is passionate about parliamentary debate, coding, and Digitize! In her free time, she enjoys biking, watching anime, and reading.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="row">
-                <div class="column">
-                    <div class="overlay-container" style="width: 100%;">
-                        <img src="img/team/2021/OperationLead2.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                Anthony Rodriguez is a sophomore at Aragon High School, and is happy to be the Operation Lead for Digitize III. He loves computer science and leads a team in organizing this year's event. He hopes to create an experience students like him will remember.</div>
+            <div class="exec-card">
+                <div class="card">
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column">
+                            <img src="img/team/2021/MarketingLead.jpg" class="image" style="width: 70%;">
+                        </div>
+                        <div class="col-md-6 col-sm-12 exec-name">
+                            <h2>Amber Yeh</h2>
+                            <h5>Marketing Lead</h5>
+                            <br>
+                            <p>
+                                This is Amber's second year as the Marketing Director of Digitize. She oversees the @digitizetech social media posts, partnerships with other organizations, and advertisements. She enjoys playing oboe and badminton with friends.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="column">
-                    <div class="overlay-container" style="width: 100%;">
-                        <img src="img/team/2021/PRLead.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text">Hi! I am the PR lead of Digitize tech. I’m from the UK and I love acting and skateboarding in my free time!
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/anushkazarak2/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Marketing1.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Emily Feng enjoys graphic design and computer science.
+                                        <br>
+                                        <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                            <a href="https://www.instagram.com/emily._.feng/" target="_blank"><i
+                                                            class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Marketing2.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Halan Tran is currently a junior at the Dr. TJ Owens Gilroy Early College Academy (GECA). She wants to explore the field of computer science and potentially pursue a career in software engineering. In her spare time, she likes spending time with family
+                                        and friends, playing video games, and playing various musical instruments. She is looking forward to working with other coding enthusiasts and learning more about how computer science influences our world!
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Marketing3.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Hi my name is Ryan Huie and I am an academic year round athlete. I am a junior enrolled at Mills High and a dedicated athlete on the Burlingame Aquatics Club. I enjoy coding, swimming, designing and hanging out with friends.
+                                        <br>
+                                        <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                            <a href="https://www.instagram.com/_ryanhuie_/" target="_blank"><i
+                                                            class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="column">
-                    <div class="overlay-container" style="width: 100%;">
-                        <img src="img/team/2021/TechLead.jpg" class="image">
-                        <div class="overlay">
-                            <div class="text">
-                                Laksh Bhambhani is currently a sophomore at Homestead High School and is on the Digitize Tech Team. Apart from coding, i love to spend time at our Robotics club, with my friends and playing instruments. I also lead Elementary school Robotics and soccer
-                                teams.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.linkedin.com/in/lakshbhambhani/" target="_blank"><i
-                                                    class="fa fa-linkedin"></i></a>
-                                    <a href="https://www.instagram.com/_laksh.1107_/" target="_blank "><i class="fa fa-instagram "></i></a>
+            </div>
+
+
+            <div class="exec-card">
+                <div class="card">
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column">
+                            <img src="img/team/2021/OperationLead2.jpg" class="image" style="width: 70%;">
+                        </div>
+                        <div class="col-md-6 col-sm-12 exec-name">
+                            <h2>Anthony Rodriguez</h2>
+                            <h5>Operations Lead</h5>
+                            <br>
+                            <p>
+                                Anthony Rodriguez is a sophomore at Aragon High School, and is happy to be the Operation Lead for Digitize Tech. He loves computer science and leads a team in organizing this year's event. He hopes to create an experience students like him will remember.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column">
+                            <img src="img/team/2021/OperationsLead1.jpg" class="image" style="width: 70%;">
+                        </div>
+                        <div class="col-md-6 col-sm-12 exec-name">
+                            <h2>Adithya Peruvemba</h2>
+                            <h5>Operations Lead</h5>
+                            <br>
+                            <p>
+                                Adithya is a junior at Saratoga High School and he's excited to join the Digitize Team as an Operations Lead this year! He enjoy's coding, exercising, and watching shows in his free time. This year he's looking forward to expanding Digitize and its mission
+                                even further and creating a lasting impact. </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Operations1.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Clarissa Li is on our operations team and loves programming in Java. She even tutors kids sometimes.
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Operations2.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Ethan Kidron is a part of our operations team. He likes computers.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Operations3.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Evan is currently a junior at Aragon High School and this is his second year on the Digitize Hackathon Operations team! Besides Digitize, he also enjoys bingeing TV shows, baking, listening to or making music, and playing volleyball. This year, he hopes
+                                        to work with his team and plan various events that provide everyone an opportunity to learn something new :)
+                                        <br>
+                                        <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                            <a href="https://www.instagram.com/evanusyang/" target="_blank"><i
+                                                            class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Operations4.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Hi, my name is Kyra! I am a sophomore in high school from Houston, Texas. I am very invested in computer science, and I also am passionate about teaching others how to code. Outside of this I enjoy playing the piano, competing in speech & debate, and
+                                        spending time with friends and family.
+                                        <br>
+                                        <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                            <a href="https://www.instagram.com/kyraterez/" target="_blank"><i
+                                                            class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Operations5.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        My name is Manya Sewkani and I am a junior at The Emerald Heights International School. I am passionate about learning new languages, swimming and coding. I am an outdoorsy person who loves all types of adventures.
+                                        <br>
+                                        <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                            <a href="https://www.instagram.com/manya_sewkani/
+                                            " target="_blank"><i
+                                                            class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/Operations6.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Hi, my name is Mina. I'm currently a junior at Herricks High School and a part of the operations team at Digitize Tech. Aside from coding and computer science, I am passionate about biology/medicine and the environment. I also love to bake, take pictures,
+                                        and read. I look forward to being on this team and I hope everyone has a fun experience at Digitize!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="exec-card">
+                <div class="card">
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column">
+                            <img src="img/team/2021/PRLead.jpg" class="image" style="width: 70%;">
+                        </div>
+                        <div class="col-md-6 col-sm-12 exec-name">
+                            <h2>Anushka Mirza</h2>
+                            <h5>PR/Sponsorships Lead</h5>
+                            <br>
+                            <p>
+                                Anushka Mirza is the PR lead for Digitize tech and this is her first year on the team. She's from the UK and she loves acting and skateboarding in her free time!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-left: 1%; margin-right: 1%; margin-top: 1%; margin-bottom: 1%;">
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/PR1.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        My name is Jessica and I am currently a Junior at Aragon. In my free time, I enjoy programming, playing tennis and spending time with my friends. I joined Digitize because I felt like it would be a good opportunity for me to improve both myself and my
+                                        community. </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/PR2.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Michelle Liu is a junior at Aragon High School and she is a member of the Public Relations team for Digitize. She enjoys traveling, trying new foods and swimming.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column ">
+                            <div class="overlay-container " style="width: 100%; ">
+                                <img src="img/team/2021/PR3.jpg " class="image ">
+                                <div class="overlay ">
+                                    <div class="text ">
+                                        Hi! My name is Sanjita Maram and I am a junior at Dougherty Valley Highschool. I love to code, paint, and read.
+                                        <br>
+                                        <div class="popup btn" style="align-self: center; margin-top: 10%;">
+                                            <a href="https://www.instagram.com/sanjita_mrm/
+                                            " target="_blank"><i
+                                                            class="fa fa-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="exec-card">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="img/team/2021/TechLead.jpg" class="image" style="width: 70%;">
+                        </div>
+                        <div class="col-md-6 col-sm-12 exec-name">
+                            <h2>Laksh Bhambhani</h2>
+                            <h5>Tech Lead</h5>
+                            <br>
+                            <p>
+                                Laksh Bhambhani is currently a junior at Homestead High School and is on the Digitize Tech Team. Apart from coding, i love to spend time at our Robotics club, with my friends and playing instruments. I also lead Elementary school Robotics and soccer teams.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row ">
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Marketing1.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                I enjoy graphic design and computer science.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/emily._.feng/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Marketing2.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Halan Tran is currently a junior at the Dr. TJ Owens Gilroy Early College Academy (GECA). She wants to explore the field of computer science and potentially pursue a career in software engineering. In her spare time, she likes spending time with family
-                                and friends, playing video games, and playing various musical instruments. She is looking forward to working with other coding enthusiasts and learning more about how computer science influences our world!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Marketing3.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Hi my name is Ryan Huie and I am an academic year round athlete. I am a junior enrolled at Mills High and a dedicated athlete on the Burlingame Aquatics Club. I enjoy coding, swimming, designing and hanging out with friends.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/_ryanhuie_/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Operations1.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Clarissa Li is on our operations team and loves programming in Java. She even tutors kids sometimes.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Operations2.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Ethan Kidron is a part of our operations team. He likes computers.
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Operations3.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Evan is currently a junior at Aragon High School and this is his second year on the Digitize Hackathon Operations team! Besides Digitize, he also enjoys bingeing TV shows, baking, listening to or making music, and playing volleyball. This year, he hopes
-                                to work with his team and plan various events that provide everyone an opportunity to learn something new :)
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/evanusyang/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Operations4.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Hi, my name is Kyra! I am a sophomore in high school from Houston, Texas. I am very invested in computer science, and I also am passionate about teaching others how to code. Outside of this I enjoy playing the piano, competing in speech & debate, and
-                                spending time with friends and family.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/kyraterez/" target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Operations5.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                My name is Manya Sewkani and I am a junior at The Emerald Heights International School. I am passionate about learning new languages, swimming and coding. I am an outdoorsy person who loves all types of adventures.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/manya_sewkani/
-                                    " target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/Operations6.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Hi, my name is Mina. I'm currently a junior at Herricks High School and a part of the operations team at Digitize Tech. Aside from coding and computer science, I am passionate about biology/medicine and the environment. I also love to bake, take pictures,
-                                and read. I look forward to being on this team and I hope everyone has a fun experience at Digitize!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row ">
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/PR1.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                My name is Jessica and I am currently a Junior at Aragon. In my free time, I enjoy programming, playing tennis and spending time with my friends. I joined Digitize because I felt like it would be a good opportunity for me to improve both myself and my
-                                community. </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/PR2.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Michelle Liu is a junior at Aragon High School and she is a member of the Public Relations team for Digitize. She enjoys traveling, trying new foods and swimming.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column ">
-                    <div class="overlay-container " style="width: 100%; ">
-                        <img src="img/team/2021/PR3.jpg " class="image ">
-                        <div class="overlay ">
-                            <div class="text ">
-                                Hi! My name is Sanjita Maram and I am a junior at Dougherty Valley Highschool. I love to code, paint, and read.
-                                <br>
-                                <div class="popup btn" style="align-self: center; margin-top: 10%;">
-                                    <a href="https://www.instagram.com/sanjita_mrm/
-                                    " target="_blank"><i
-                                                    class="fa fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-
 
 
 
         </div>
-
 
 
     </section>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
 </body>
 
 
